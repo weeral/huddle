@@ -33,11 +33,14 @@ li {
     list-style: none;
     color: white;
     display: inline-block;
+    padding-right: 10px;
 }
-i {
+a {
     color: white;
     margin: 10px;
+    text-decoration: none;
 }
 ul {
     text-align: right;
+    padding-right: 145px;
 }

@@ -1,49 +1,94 @@
-body{
-    background: hsl(257, 40%, 49%);
-    background-image: url("./images/bg-desktop.svg");
+body {
+  background: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-desktop.svg");
 }
 
 .community {
-    display: inline-block;
-    font-family: "Poppins", "sans-serif";
-    color: white;
-    position: absolute;
-    top: 100px;
-    padding-left: 70px;
+  display: inline-block;
+  font-family: "Poppins", "sans-serif";
+  color: white;
+  position: absolute;
+  top: 100px;
+  padding-left: 70px;
 }
+
 .community h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
+
 .community p {
-    font-family: "Open Sans";
+  font-family: "Open Sans";
 }
+
 .main-section {
-    padding-left: 60px;
+  padding-left: 60px;
 }
 .huddlelogo {
-    padding-left: 60px;
+  padding-left: 60px;
 }
+
 button {
-    width: 175px;
-    height: 50px;
-    border: none;
-    font-size: 14px;
-    color: hsl(257, 40%, 49%);
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  width: 175px;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  color: hsl(257, 40%, 49%);
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 li {
-    list-style: none;
-    color: white;
-    display: inline-block;
-    padding-right: 10px;
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding-right: 10px;
 }
+
 a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
+  color: white;
+  margin: 10px;
+  text-decoration: none;
 }
+
 ul {
-    text-align: right;
-    padding-right: 145px;
+  text-align: right;
+  padding-right: 145px;
+}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .huddlelogo img {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .huddlelogo {
+    padding: 0px;
+    margin: 0px;
+  }
+  body {
+    margin: 0px 40px;
+  }
+  .main-section {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    display: block;
+    position: relative;
+  }
+  .main-section img {
+    width: 103%;
+    padding-top: 55px;
+  }
+  .community {
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+  }
+  .community h2 {
+    font-size: 20px;
+  }
 }

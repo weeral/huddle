@@ -18,6 +18,7 @@ body {
 
 .community p {
   font-family: "Open Sans";
+  margin-right: 138px;
 }
 
 .main-section {
@@ -28,13 +29,15 @@ body {
 }
 
 button {
-  width: 175px;
-  height: 50px;
+  background: white;
+  width: 230px;
+  height: 40px;
   border: none;
+  margin: 20px 0px;
   font-size: 14px;
   color: hsl(257, 40%, 49%);
   border-radius: 50px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -57,7 +60,7 @@ ul {
 
 /* Portrait */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .huddlelogo img {
     width: 50%;
     padding-top: 50px;
@@ -68,6 +71,8 @@ ul {
   }
   body {
     margin: 0px 40px;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
   }
   .main-section {
     margin: 0px;
@@ -84,11 +89,22 @@ ul {
     top: 0px;
     padding: 0px;
     margin: 0px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     position: relative;
   }
   .community h2 {
     font-size: 20px;
+  }
+  .community p {
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 4px;
+  }
+  ul {
+    padding: 0px;
+    text-align: center;
+    margin-top: 65px;
   }
 }
